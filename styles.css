@@ -1,0 +1,169 @@
+/* Reset */
+*,
+*:before,
+*:after {
+	-webkit-box-sizing: border-box;
+	   -moz-box-sizing: border-box;
+	        box-sizing: border-box;
+}
+
+ul {
+	margin: 0;
+	padding: 0;
+}
+
+li {
+	list-style-type: none;
+}
+
+a {
+	text-decoration: none;
+	color: #fff;
+}
+
+/* Colors - http://www.colourlovers.com/palette/148712/Gamebookers */
+
+/* Main */
+body {
+	font-family: 'Titillium Web', sans-serif;
+	font-size: 18px;
+	background-color: #363636;
+	color: #fff;
+	width: 100%;
+	margin: 0 auto;
+}
+
+.wrapper {
+	max-width: 1000px;
+	width: 100%;
+	margin: 0 auto;
+}
+
+header h1 {
+	margin: 0;
+	text-align: center;
+}
+
+header p {
+	margin: 0;
+	text-align: center;
+}
+
+header a.forum {
+	text-transform: uppercase;
+	font-size: 16px;
+}
+
+a.forum:hover {
+	color: #3299bb;
+}
+
+/* Content */
+section {
+	margin: 30px 0;
+}
+
+section ul {
+	text-align: center;
+	width: 100%;
+	display: none;
+}
+
+section ul.open {
+	display: block;
+}
+
+section ul:first-of-type,
+section ul:last-of-type {
+	color: #3299bb;
+}
+
+section ul:first-of-type {
+	margin-bottom: 20px;
+}
+
+section ul:last-of-type {
+	margin-top: 20px;
+}
+
+section ul li {
+	display: inline-block;
+	width: 22%;
+	line-height: 30px;
+}
+
+section ul li:first-child {
+	width: 8%;
+}
+
+section ul li:nth-child(2) {
+	text-align: left;
+}
+
+section a.collapse {
+	display: block;
+	width: 100%;
+	max-width: 150px;
+	margin: 0 auto;
+	text-align: center;
+	font-size: 22px;
+	text-transform: uppercase;
+	margin-bottom: 20px;
+	cursor: pointer;
+	position: relative;
+}
+
+section a.collapse:before {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 1px;
+	height: 0;
+	background: #fff;
+	content: "";
+	opacity: 1;
+	transition: all 0.3s;
+}
+
+section a.collapse:after {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	height: 1px;
+	background: #fff;
+	content: "";
+	opacity: 1;
+	transition: all 0.3s;
+}
+
+section a.collapse:hover:before {
+	height: 100%;
+}
+
+section a.collapse:hover:after {
+	opacity: 0;
+	bottom: 100%;
+}
+
+/* Results colors */
+.high {
+	color: #8cb369;
+}
+
+.mid {
+	color: #f4e285;
+}
+
+.low {
+	color: #bc4b51;
+}
+
+/* Footer */
+.copyright {
+	text-align: center;
+}
+
+.copyright a:hover {
+	color: #3299bb;
+}
